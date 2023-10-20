@@ -40,8 +40,8 @@ class Profesor(Usuario):
 
     def dictar_curso(self, nombre_curso, carrera):
         if carrera == self.carrera:
-            contraseña_matriculacion = self.generar_contrasenia()
-            curso = Curso(nombre_curso, carrera, contraseña_matriculacion)
+            contrasenia_matriculacion = self.generar_contrasenia()
+            curso = Curso(nombre_curso, carrera, contrasenia_matriculacion)
             self.mis_cursos.append(curso)
             return curso
 
